@@ -20,5 +20,117 @@
         "name":"Bin",
         "image":"/EmptyBin.png"
     }
+    ],
+     "Fileapps":[
+      { 
+      "id": 1,
+      "name": "Music",
+      "image": "/Music.png"},
+        { 
+      "id": 2,
+      "name": "Notepad",
+      "image": "/Notepad.png"},
+        { 
+      "id": 3,
+      "name": "Home",
+      "image": "/Home.png"},
+        { 
+      "id": 4,
+      "name": "Settings",
+      "image": "/Setting.png"},
+        { 
+      "id": 5,
+      "name": "Photos",
+      "image": "/Photo.png"}, 
+       { 
+      "id": 6,
+      "name": "Mail",
+      "image": "/mail.png"},
+        { 
+      "id": 7,
+      "name": "Chat App",
+      "image": "/Chatapp.png"},
+        { 
+      "id": 8,
+      "name": "Docs",
+      "image": "/Docs.png"},
+        { 
+      "id": 9,
+      "name": "Help",
+      "image": "/Help.png"},
+        { 
+      "id": 10,
+      "name": "Excel File",
+      "image": "/ExcelFile.png"},
+        { 
+      "id": 11,
+      "name": "Folder",
+      "image": "/Folder.png"},
+        { 
+      "id": 12,
+      "name": "Calendar",
+      "image": "/Calendar.png"},
+        { 
+      "id": 13,
+      "name": "Dairy",
+      "image": "/Diary.png"},
+          { 
+      "id": 14,
+      "name": "Recycle Bin",
+      "image": "/RecycleBin.png"},
+          { 
+      "id": 15,
+      "name": "Empty Bin",
+      "image": "/EmptyBin.png"},
+          { 
+      "id": 16,
+      "name": "Calculator",
+      "image": "/Calculator.png"}
+    ],
+     "FileDocs":[
+      {  
+      "id": 1,
+      "name": "Text docx",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 2,
+      "name": "Imp pdf",
+      "image": "/powerpoint.png"},
+         {  
+      "id": 3,
+      "name": "Imp pdf",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 4,
+      "name": "Imp pdf",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 5,
+      "name": "Imp pdf",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 6,
+      "name": "Text docx",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 7,
+      "name": "Text docx",
+      "image": "/Exceldocs.png"},
+         {  
+      "id": 8,
+      "name": "Text docx",
+      "image": "/Exceldocs.png"},
+       {  
+      "id": 9,
+      "name": "Imp pdf",
+      "image": "/powerpoint.png"},
+       {  
+      "id": 10,
+      "name": "Imp pdf",
+      "image": "/powerpoint.png"},
+       {  
+      "id": 11,
+      "name": "Imp pdf",
+      "image": "/powerpoint.png"}
     ]
 }
