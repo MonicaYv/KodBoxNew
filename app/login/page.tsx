@@ -1,7 +1,51 @@
+"use client"
+
+import useToast from "@/lib/zustand/useToast";
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Login() {
+
+   const { push } = useRouter();
+   const { showToast } = useToast();
+   const { data: session } = useSession();
+   useEffect(() => {
+     if (session?.user) {
+       push("/");
+     }
+   }, [session, push]);
+  
+  
+  
+  async function onSubmit() {
+        console.log("Clicked")
+        const res = await signIn("credentials", {
+          name:"azam72",password:"123456789",
+          redirect: false,
+        });
+        if (res?.ok) {
+          push("/");
+          showToast({
+            type: "success",
+            title: "Success",
+            message: "Login Successfull !",
+          });
+        } else {
+          showToast({
+            type: "error",
+            title: "Failure",
+            message: res?.error ?? "An error occurred while signing in.",
+          });
+        }
+      }
+
+  useEffect(() => {
+   onSubmit()
+ },[])
+
   return (
     <div className="flex relative gap-1">
       <div className="bg-[url('/Wallpaper.png')] bg-no-repeat bg-center bg-cover w-1/2 h-screen flex items-center justify-center rounded-tr-[100px]">
@@ -86,8 +130,10 @@ export default function Login() {
                 </div>
                 <div className="p-3">
                   <button
+                    onClick={onSubmit}
                     className="group relative flex w-full justify-center rounded-2xl border border-transparent bg-black py-2 px-4 text-sm font-medium text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
-                    type="submit"
+                    type="button"
+                    
                   >
                     Log in
                   </button>
