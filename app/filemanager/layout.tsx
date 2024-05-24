@@ -10,14 +10,16 @@ export default function RootLayout({
   return (
     <>
       <main className=" w-full h-screen">
-        <div className="flex items-center w-full h-18 px-10 py-5">
+        <div className="flex items-center w-full px-10 py-5">
           <FileHeader />
         </div>
-        <div className="flex flex-grow">
+        <div className="flex h-4/5">
           <FileSidebar />
           {children}
         </div>
-          <Taskbar />
+        <div className="fixed bottom-0 w-full">
+          <Taskbar/>
+        </div>
       </main>
     </>
   );

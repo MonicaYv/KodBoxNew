@@ -3,134 +3,134 @@
           {
       "id": 1,
       "name": "Diary",
-      "image": "/Diary.png"
+      "image": "/images/Diary.png"
     },
     {
       "id": 2,
       "name": "Calendar",
-      "image": "/Calendar.png"
+      "image": "/images/Calendar.png"
     },
     {
       "id": 3,
       "name": "Chrome",
-      "image":"/GoogleChrome.png"
+      "image":"/images/GoogleChrome.png"
     },
     {
         "id":4,
         "name":"Bin",
-        "image":"/EmptyBin.png"
+        "image":"/images/EmptyBin.png"
     }
     ],
      "Fileapps":[
       { 
       "id": 1,
       "name": "Music",
-      "image": "/Music.png"},
+      "image": "/images/Music.png"},
         { 
       "id": 2,
       "name": "Notepad",
-      "image": "/Notepad.png"},
+      "image": "/images/Notepad.png"},
         { 
       "id": 3,
       "name": "Home",
-      "image": "/Home.png"},
+      "image": "/images/Home.png"},
         { 
       "id": 4,
       "name": "Settings",
-      "image": "/Setting.png"},
+      "image": "/images/Setting.png"},
         { 
       "id": 5,
       "name": "Photos",
-      "image": "/Photo.png"}, 
+      "image": "/images/Photo.png"}, 
        { 
       "id": 6,
       "name": "Mail",
-      "image": "/mail.png"},
+      "image": "/images/mail.png"},
         { 
       "id": 7,
       "name": "Chat App",
-      "image": "/Chatapp.png"},
+      "image": "/images/Chatapp.png"},
         { 
       "id": 8,
       "name": "Docs",
-      "image": "/Docs.png"},
+      "image": "/images/Docs.png"},
         { 
       "id": 9,
       "name": "Help",
-      "image": "/Help.png"},
+      "image": "/images/Help.png"},
         { 
       "id": 10,
       "name": "Excel File",
-      "image": "/ExcelFile.png"},
+      "image": "/images/ExcelFile.png"},
         { 
       "id": 11,
       "name": "Folder",
-      "image": "/Folder.png"},
+      "image": "/images/Folder.png"},
         { 
       "id": 12,
       "name": "Calendar",
-      "image": "/Calendar.png"},
+      "image": "/images/Calendar.png"},
         { 
       "id": 13,
       "name": "Dairy",
-      "image": "/Diary.png"},
+      "image": "/images/Diary.png"},
           { 
       "id": 14,
       "name": "Recycle Bin",
-      "image": "/RecycleBin.png"},
+      "image": "/images/RecycleBin.png"},
           { 
       "id": 15,
       "name": "Empty Bin",
-      "image": "/EmptyBin.png"},
+      "image": "/images/EmptyBin.png"},
           { 
       "id": 16,
       "name": "Calculator",
-      "image": "/Calculator.png"}
+      "image": "/images/Calculator.png"}
     ],
      "FileDocs":[
       {  
       "id": 1,
       "name": "Text docx",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 2,
       "name": "Imp pdf",
-      "image": "/powerpoint.png"},
+      "image": "/images/powerpoint.png"},
          {  
       "id": 3,
       "name": "Imp pdf",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 4,
       "name": "Imp pdf",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 5,
       "name": "Imp pdf",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 6,
       "name": "Text docx",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 7,
       "name": "Text docx",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
          {  
       "id": 8,
       "name": "Text docx",
-      "image": "/Exceldocs.png"},
+      "image": "/images/Exceldocs.png"},
        {  
       "id": 9,
       "name": "Imp pdf",
-      "image": "/powerpoint.png"},
+      "image": "/images/powerpoint.png"},
        {  
       "id": 10,
       "name": "Imp pdf",
-      "image": "/powerpoint.png"},
+      "image": "/images/powerpoint.png"},
        {  
       "id": 11,
       "name": "Imp pdf",
-      "image": "/powerpoint.png"}
+      "image": "/images/powerpoint.png"}
     ]
 }

@@ -6,7 +6,7 @@ export default function AppBar() {
   return (
     <aside className="flex flex-col gap-2">
       {apps.map((app) => (
-        <Image src={app.image} alt={app.name} width={70} height={70} />
+        <Image key={app.id} src={app.image} alt={app.name} width={70} height={70} />
       ))}
     </aside>
   );

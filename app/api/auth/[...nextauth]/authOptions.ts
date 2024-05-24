@@ -25,14 +25,12 @@ const authOptions: NextAuthOptions = {
         password: { type: "password" }
       },
       authorize: async (credentials: any) => {
-        console.log(credentials)
         try {
           const { data } = await axios.post(`${API_BASE}/login`, {
             name: credentials.name,
             password: credentials.password,
           }); 
           let d = data as LoginApiResponse;
-          console.log(d)
           return {
             name: d.data.name,
             email: d.data.email,
@@ -43,7 +41,6 @@ const authOptions: NextAuthOptions = {
           };         
         } catch (error) {
           let e = axiosErrorFormatter(error);
-          console.log(error)
           throw new Error(e);
         }
       },
