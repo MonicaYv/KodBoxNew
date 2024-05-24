@@ -1,7 +1,8 @@
-import { apps } from "@/data/data.json";
+import appsData from "@/data/data.json";
 import Image from "next/image";
 
 export default function AppBar() {
+  const apps = appsData.apps;
   return (
     <aside className="flex flex-col gap-2">
       {apps.map((app) => (

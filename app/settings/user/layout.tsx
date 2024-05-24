@@ -1,15 +1,14 @@
-
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <>
-            <main className="flex">
-                <aside>Sidebar</aside>
-                {children}
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main className="flex">
+        <aside>Sidebar</aside>
+        {children}
+      </main>
+    </>
+  );
 }

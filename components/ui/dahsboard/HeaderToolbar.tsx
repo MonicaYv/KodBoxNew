@@ -1,8 +1,4 @@
-import { Search } from "lucide-react";
-import { Bell } from "lucide-react";
-import { Wifi } from "lucide-react";
-import { Volume2 } from "lucide-react";
-import { BatteryMedium } from "lucide-react";
+import { Search, Bell, Wifi, Volume2, BatteryMedium } from "lucide-react";
 
 export default function HeaderToolbar() {
   return (
