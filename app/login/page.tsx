@@ -21,7 +21,6 @@ export default function Login() {
   
   
   async function onSubmit() {
-        console.log("Clicked")
         const res = await signIn("credentials", {
           name:"azam72",password:"123456789",
           redirect: false,
@@ -44,7 +43,7 @@ export default function Login() {
 
   return (
     <div className="flex relative gap-1">
-      <div className="bg-[url('/images/Wallpaper.png')] bg-no-repeat bg-center bg-cover w-1/2 h-screen flex items-center justify-center rounded-tr-[100px]">
+      <div  className="bg-[url('/images/Rectanglebg.png')] bg-no-repeat bg-center bg-cover w-1/2 h-screen flex items-center justify-center rounded-tr-[100px]">
         <div className="w-full max-w-xl  bg-gray-200 bg-opacity-50 h-2/3 md:h-1/2 lg:h-3/4 xl:h-2/3 rounded-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-full h-24 flex items-center justify-center">
             <Image src="/images/logo.png" alt="logo" width={70} height={70} />

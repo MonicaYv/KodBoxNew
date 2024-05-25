@@ -2,18 +2,18 @@
     "apps":[
           {
       "id": 1,
-      "name": "Diary",
-      "image": "/images/Diary.png"
+      "name": "My computer",
+      "image": "/images/computer.png"
     },
     {
       "id": 2,
-      "name": "Calendar",
-      "image": "/images/Calendar.png"
+      "name": "Plugin",
+      "image": "/images/plugins.png"
     },
     {
       "id": 3,
-      "name": "Chrome",
-      "image":"/images/GoogleChrome.png"
+      "name": "Setting",
+      "image":"/images/settings.png"
     },
     {
         "id":4,
@@ -132,5 +132,68 @@
       "id": 11,
       "name": "Imp pdf",
       "image": "/images/powerpoint.png"}
+    ],
+    "Desktopapps":[
+    {
+        "id":1,
+        "name":"Operation log",
+        "image":"/images/operationotes.png",
+        "url":""
+      },{
+        "id":2,
+        "name":"Light App",
+        "image":"/images/lightapp.png",
+        "url":""
+      },{
+        "id":3,
+        "name":"My Albums",
+        "image":"/images/album.png",
+        "url":""
+      },{
+        "id":4,
+        "name":"Excel",
+        "image":"/images/xlsx.png",
+        "url":""
+      },{
+        "id":5,
+        "name":"PPT",
+        "image":"/images/pptx.png",
+        "url":""
+      },{
+        "id":6,
+        "name":"Help",
+        "image":"/images/about.png",
+        "url":""
+      },{
+        "id":7,
+        "name":"iCloud",
+        "image":"/images/icloud.png",
+        "url":""
+      },{
+        "id":8,
+        "name":"Dots ERP",
+        "image":"/images/ERPNext.png",
+        "url":""
+      },{
+        "id":9,
+        "name":"Dots Chat",
+        "image":"/images/logo-dots-chat.png",
+        "url":""
+      },{
+        "id":10,
+        "name":"Excel",
+        "image":"/images/xlsx.png",
+        "url":""
+      },{
+        "id":11,
+        "name":"PPT",
+        "image":"/images/pptx.png",
+        "url":""
+      },{
+        "id":12,
+        "name":"PPT",
+        "image":"/images/pptx.png",
+        "url":""
+      }
     ]
 }
