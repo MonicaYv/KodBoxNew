@@ -11,7 +11,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 
 export default function Notification({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-[350px] h-[300px]", className)} {...props}>
+    <Card className={cn(className)} {...props}>
       <CardHeader className="text-center">
         <CardTitle>Notification Center</CardTitle>
       </CardHeader>

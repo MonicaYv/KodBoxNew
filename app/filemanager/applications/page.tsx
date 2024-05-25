@@ -6,8 +6,8 @@ export default function Applications() {
   const apps = FileappsData.Fileapps;
 
   return (
-    <div className="w-[83vw] h-[700px]">
-      <div className="w-full h-[8vh] bg-[url('/yellowbar.png')] bg-no-repeat bg-cover">
+    <div className="w-[83vw]">
+      <div className="w-full bg-[url('/images/yellowbar.png')] bg-no-repeat bg-cover">
         <div className="flex items-center p-5 gap-5">
           <div className="flex flex-2 items-center gap-2 h-8 bg-white p-1">
             <MoveLeft />
@@ -30,7 +30,7 @@ export default function Applications() {
           />
         </div>
       </div>
-      <div className=" h-[73.1vh]">
+      <div>
         <div className="flex gap-12 flex-wrap p-10 text-center">
           {apps.map((app) => {
             return (

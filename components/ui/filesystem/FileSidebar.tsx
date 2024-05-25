@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FileSidebar() {
   return (
-    <div className="w-[17vw] h-[700px] bg-[url('/sidebarimg.png')] bg-no-repeat bg-cover">
+    <div className="w-60 bg-[url('/images/sidebarimg.png')] bg-no-repeat bg-cover">
       <div className="px-10 py-7">
         <h1 className="text-lg text-slate-600">Favourites</h1>
       </div>
