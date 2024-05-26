@@ -2,21 +2,26 @@
     "apps":[
           {
       "id": 1,
-      "name": "Diary",
-      "image": "/images/Diary.png"
+      "name": "My computer",
+      "image": "/images/computer.png"
     },
     {
       "id": 2,
-      "name": "Calendar",
-      "image": "/images/Calendar.png"
+      "name": "Plugin",
+      "image": "/images/plugins.png"
     },
     {
       "id": 3,
-      "name": "Chrome",
-      "image":"/images/GoogleChrome.png"
+      "name": "Setting",
+      "image":"/images/settings.png"
+    },
+       {
+      "id": 4,
+      "name": "Light App",
+      "image":"/images/appStore.png"
     },
     {
-        "id":4,
+        "id":5,
         "name":"Bin",
         "image":"/images/EmptyBin.png"
     }
@@ -132,5 +137,63 @@
       "id": 11,
       "name": "Imp pdf",
       "image": "/images/powerpoint.png"}
+    ],
+    "Desktopapps":[
+    {
+        "id":1,
+        "name":"Operation log",
+        "image":"/images/operationotes.png",
+        "url":""
+      },{
+        "id":2,
+        "name":"Light App",
+        "image":"/images/lightapp.png",
+        "url":""
+      },{
+        "id":3,
+        "name":"My Albums",
+        "image":"/images/album.png",
+        "url":""
+      },{
+        "id":4,
+        "name":"Excel",
+        "image":"/images/xlsx.png",
+        "url":"https://snappy.sizaf.com/example/editor?fileName=new.xlsx&userid=uid-1&lang=en&directUrl=false"
+      },{
+        "id":5,
+        "name":"PPT",
+        "image":"/images/pptx.png",
+        "url":"https://snappy.sizaf.com/example/editor?fileName=new.pptx&userid=uid-1&lang=en&directUrl=false"
+      },{
+        "id":6,
+        "name":"Help",
+        "image":"/images/about.png",
+        "url":""
+      },{
+        "id":7,
+        "name":"iCloud",
+        "image":"/images/icloud.png",
+        "url":"https://www.icloud.com"
+      },{
+        "id":8,
+        "name":"Dots ERP",
+        "image":"/images/ERPNext.png",
+        "url":"http://erp.sizaf.com/app"
+      },{
+        "id":9,
+        "name":"Dots Chat",
+        "image":"/images/logo-dots-chat.png",
+        "url":"https://erp.sizaf.com/login#login"
+      },{
+        "id":10,
+        "name":"Word",
+        "image":"/images/docx.png",
+        "url":"https://snappy.sizaf.com/example/editor?fileName=new.docx&userid=uid-1&lang=en&directUrl=false"
+      },{
+         "id":11,
+        "name":"Open Social App",
+        "image":"/images/opensociallogo.png",
+        "url":"https://social.sizaf.com/html/user/login"
+      }
     ]
 }

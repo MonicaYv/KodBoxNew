@@ -5,7 +5,7 @@ import FileDocsData from "@/data/data.json";
 export default function Downloads() {
   const docs = FileDocsData.FileDocs;
   return (
-    <div className="w-[83vw]">
+    <div className="flex-1">
       <div className="w-full bg-[url('/images/yellowbar.png')] bg-no-repeat bg-cover">
         <div className="flex items-center p-5 gap-5">
           <div className="flex flex-2 items-center gap-2 h-8 bg-white p-1">

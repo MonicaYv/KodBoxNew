@@ -1,11 +1,12 @@
 "use client"
 
 import useToast from "@/lib/zustand/useToast";
+import { url } from "inspector";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import img from "../../public/images/Wallpaper.png"
 
 export default function Login() {
 
@@ -21,7 +22,6 @@ export default function Login() {
   
   
   async function onSubmit() {
-        console.log("Clicked")
         const res = await signIn("credentials", {
           name:"azam72",password:"123456789",
           redirect: false,
@@ -44,10 +44,15 @@ export default function Login() {
 
   return (
     <div className="flex relative gap-1">
-      <div className="bg-[url('/images/Wallpaper.png')] bg-no-repeat bg-center bg-cover w-1/2 h-screen flex items-center justify-center rounded-tr-[100px]">
+      <div
+        style={{
+          backgroundImage: `url(${img.src})`,
+        }}
+        className="bg-no-repeat bg-cover bg-center w-1/2 h-screen flex items-center justify-center rounded-tr-[100px]"
+      >
         <div className="w-full max-w-xl  bg-gray-200 bg-opacity-50 h-2/3 md:h-1/2 lg:h-3/4 xl:h-2/3 rounded-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-full h-24 flex items-center justify-center">
-            <Image src="/images/logo.png" alt="logo" width={70} height={70} />
+            <Image src="/images/logo.png" alt="Logo" width={70} height={100} />
           </div>
           <div className="flex min-h-min">
             <div className="relative w-2/5 flex items-center justify-center">
@@ -129,7 +134,6 @@ export default function Login() {
                     onClick={onSubmit}
                     className="group relative flex w-full justify-center rounded-2xl border border-transparent bg-black py-2 px-4 text-sm font-medium text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
                     type="button"
-                    
                   >
                     Log in
                   </button>
@@ -139,7 +143,12 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/images/Wallpaper.png')] bg-no-repeat bg-cover bg-center w-1/2 h-screen  rounded-tl-[100px]"></div>
+      <div
+        style={{
+          backgroundImage: `url(${img.src})`,
+        }}
+        className=" w-1/2 h-screen bg-no-repeat bg-cover bg-center  rounded-tl-[100px]"
+      ></div>
     </div>
   );
 }

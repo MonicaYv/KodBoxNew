@@ -24,7 +24,12 @@ export default function Taskbar() {
       </button>
       <Popover>
         <PopoverTrigger>
-          <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            width={50}
+            height={50}
+          />
         </PopoverTrigger>
         <PopoverContent className="w-[300px] mr-26 md:w-[500px] md:mr-32">
           <div className="flex items-center justify-start gap-5">
