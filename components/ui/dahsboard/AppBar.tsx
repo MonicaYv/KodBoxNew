@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AppBar() {
   const apps = appsData.apps;
   return (
-    <aside className="flex flex-col gap-2 items-center">
+    <aside className="flex flex-col gap-2 items-center cursor-pointer">
       {apps.map((app) => (
         <Image key={app.id} src={app.image} alt={app.name} width={60} height={60} />
       ))}

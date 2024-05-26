@@ -3,16 +3,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "@/components/AuthProvider";
 import Toaster from "@/components/Toaster";
-import {
-  ContextMenuTrigger,
-  ContextMenuItem,
-  ContextMenuSeparator,
-  ContextMenuContent,
-  ContextMenu,
-  ContextMenuSub,
-  ContextMenuSubTrigger,
-  ContextMenuSubContent,
-} from "@/components/ui/context-menu";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -29,93 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AuthProvider>
-        <ContextMenu>
-          <ContextMenuTrigger>
-            <body className={`${roboto.className}`}>
-              {children}
-              <ContextMenuContent className="w-64 p-2 rounded-md shadow-lg dark:bg-gray-950 ">
-                <ContextMenuItem className="flex items-center gap-2">
-                  Refresh
-                </ContextMenuItem>
-                <ContextMenuItem>Upload file</ContextMenuItem>
-                <ContextMenuSeparator />
-                <ContextMenuItem className="flex items-center gap-2">
-                  New folder
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  New file
-                  <ContextMenuSub>
-                    <ContextMenuSubTrigger inset></ContextMenuSubTrigger>
-                    <ContextMenuSubContent className="w-48">
-                      <ContextMenuItem>txt file</ContextMenuItem>
-                      <ContextMenuItem>md file</ContextMenuItem>
-                      <ContextMenuItem>html file</ContextMenuItem>
-                      <ContextMenuSeparator />
-                      <ContextMenuItem>Word doc file</ContextMenuItem>
-                      <ContextMenuItem>Excel xlxs file</ContextMenuItem>
-                      <ContextMenuItem>PowerPoint pptx</ContextMenuItem>
-                      <ContextMenuSeparator />
-                      <ContextMenuItem>Minder diagram</ContextMenuItem>
-                      <ContextMenuSeparator />
-                      <ContextMenuItem>Light app</ContextMenuItem>
-                      <ContextMenuItem>New URL</ContextMenuItem>
-                      <ContextMenuItem>File shortcut</ContextMenuItem>
-                    </ContextMenuSubContent>
-                  </ContextMenuSub>
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Sort by
-                  <ContextMenuSub>
-                    <ContextMenuSubTrigger inset></ContextMenuSubTrigger>
-                    <ContextMenuSubContent className="w-48 p-3">
-                      <ContextMenuItem>Name</ContextMenuItem>
-                      <ContextMenuItem>Type</ContextMenuItem>
-                      <ContextMenuItem>Size</ContextMenuItem>
-                      <ContextMenuItem>Modification</ContextMenuItem>
-                      <ContextMenuItem>Increasing</ContextMenuItem>
-                      <ContextMenuItem>Decrement</ContextMenuItem>
-                    </ContextMenuSubContent>
-                  </ContextMenuSub>
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Icon size
-                  <ContextMenuSub>
-                    <ContextMenuSubTrigger inset></ContextMenuSubTrigger>
-                    <ContextMenuSubContent className="w-48 p-3">
-                      <ContextMenuItem>Tiny</ContextMenuItem>
-                      <ContextMenuItem>Small icon</ContextMenuItem>
-                      <ContextMenuItem>Medium icon</ContextMenuItem>
-                      <ContextMenuItem>Big icon</ContextMenuItem>
-                      <ContextMenuItem>Oversized icon</ContextMenuItem>
-                    </ContextMenuSubContent>
-                  </ContextMenuSub>
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Attribute
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  More
-                  <ContextMenuSub>
-                    <ContextMenuSubTrigger inset></ContextMenuSubTrigger>
-                    <ContextMenuSubContent className="w-48 p-3">
-                      <ContextMenuItem>Show Options</ContextMenuItem>
-                    </ContextMenuSubContent>
-                  </ContextMenuSub>
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Light app
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Wallpaper
-                </ContextMenuItem>
-                <ContextMenuItem className="flex items-center gap-2">
-                  Personal
-                </ContextMenuItem>
-              </ContextMenuContent>
-              <Toaster />
-            </body>
-          </ContextMenuTrigger>
-        </ContextMenu>
+        <body className={`${roboto.className}`}>
+          {children}
+          <Toaster />
+        </body>
       </AuthProvider>
     </html>
   );
