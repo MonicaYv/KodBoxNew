@@ -7,6 +7,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import img from "../../public/images/Wallpaper.png"
+import Profile from "../../public/images/profile.png"
+import GoldBg from "../../public/images/Goldbg.png"
+import Logo from "../../public/images/logo.png"
 
 export default function Login() {
 
@@ -52,23 +55,29 @@ export default function Login() {
       >
         <div className="w-full max-w-xl  bg-gray-200 bg-opacity-50 h-2/3 md:h-1/2 lg:h-3/4 xl:h-2/3 rounded-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-full h-24 flex items-center justify-center">
-            <Image src="/images/logo.png" alt="Logo" width={70} height={100} />
+            <Image
+              src={Logo}
+              alt="logo"
+              width={70}
+              height={40}
+            />
           </div>
           <div className="flex min-h-min">
             <div className="relative w-2/5 flex items-center justify-center">
               <Image
                 className="absolute z-0"
-                src="/images/Goldbg.png"
+                src={GoldBg}
                 alt="GoldBackground Image"
                 width={200}
                 height={200}
               />
               <Image
                 className="z-10"
-                src="/images/profile.png"
+                src={Profile}
                 alt="Profile"
                 width={100}
                 height={100}
+                
               />
             </div>
             <div className="w-3/5">
